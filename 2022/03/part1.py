@@ -8,11 +8,11 @@ if len(sys.argv) != 2:
     print(f'Usage: {sys.argv[0]} <filename>', file=sys.stderr)
     sys.exit(1)
 
+# Keep a running total of the priorities of all the items that are packed incorrectly
+total = 0
+
 # Read input file
 with open(sys.argv[1], 'r') as file:
-
-    # Keep a running total of the priorities of all the items that are packed incorrectly
-    total = 0
 
     # Check each backpack
     for line in file:

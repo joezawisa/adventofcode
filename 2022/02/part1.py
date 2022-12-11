@@ -30,11 +30,11 @@ points = {
     'Scissors': 3
 }
 
+# Keep a total of all the points I've earned
+total = 0
+
 # Read input file
 with open(sys.argv[1], 'r') as file:
-
-    # Keep a total of all the points I've earned
-    total = 0
 
     # Calculate the points for each round and add them to the total
     for line in file:
